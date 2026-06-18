@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShiftFlow - Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <header class="app-header">
+      <div>
+        <h1>ShiftFlow</h1>
+        <p id="userInfo"></p>
+      </div>
+
+      <button class="secondary-btn" onclick="logout()">
+        Odjava
+      </button>
+    </header>
+
+    <main>
+
+      <section class="card">
+        <h2>Dashboard</h2>
+        <p id="dashboardIntro"></p>
+      </section>
+
+      <section class="grid" id="userActions">
+        <a class="nav-card" href="request.html">
+          <h3>Pošalji zahtjev</h3>
+          <p>Unesi želju za raspored.</p>
+        </a>
+
+        <a class="nav-card" href="my-requests.html">
+          <h3>Moji zahtjevi</h3>
+          <p>Pregledaj status svojih zahtjeva.</p>
+        </a>
+      </section>
+
+      <section class="grid hidden" id="adminActions">
+        <a class="nav-card" href="admin-requests.html?status=pending">
+          <h3>Novi zahtjevi</h3>
+          <p>Zahtjevi koji čekaju obradu.</p>
+        </a>
+
+        <a class="nav-card" href="admin-requests.html?status=approved">
+          <h3>Odobreni zahtjevi</h3>
+          <p>Zahtjevi koji su odobreni.</p>
+        </a>
+
+        <a class="nav-card" href="admin-requests.html?status=rejected">
+          <h3>Odbijeni zahtjevi</h3>
+          <p>Zahtjevi koji su odbijeni.</p>
+        </a>
+
+        <a class="nav-card" href="admin-requests.html?status=all">
+          <h3>Svi zahtjevi</h3>
+          <p>Kompletan pregled zahtjeva.</p>
+        </a>
+
+        <a class="nav-card hidden" id="superadminUsersLink" href="admin-users.html">
+          <h3>Dodaj korisnika</h3>
+          <p>Kreiraj djelatnika ili voditelja.</p>
+        </a>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

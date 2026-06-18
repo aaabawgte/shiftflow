@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korisnici</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+  <h1>Dodaj korisnika</h1>
+
+  <input
+    type="text"
+    id="username"
+    placeholder="Korisničko ime"
+  >
+
+  <input
+    type="password"
+    id="password"
+    placeholder="Lozinka"
+  >
+
+  <select id="role">
+    <option value="user">Djelatnik</option>
+    <option value="admin">Voditelj</option>
+  </select>
+
+  <button id="createUserBtn">
+    Kreiraj korisnika
+  </button>
+
+  <p id="message"></p>
+
+  <hr>
+
+  <h2>Postojeći korisnici</h2>
+
+  <div id="usersList"></div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/admin-users.js"></script>
+
+</body>
+</html>

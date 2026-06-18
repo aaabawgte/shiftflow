@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pošalji zahtjev</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+  <a href="dashboard.html">← Dashboard</a>
+
+  <h1>Pošalji zahtjev</h1>
+
+  <label>Datum</label>
+  <input type="date" id="requestDate">
+
+  <p id="dayName"></p>
+
+  <label>Opcija</label>
+  <select id="shiftType">
+    <option value="">Odaberi</option>
+    <option value="ujutro">Ujutro</option>
+    <option value="popodne">Popodne</option>
+    <option value="slobodno">Slobodno</option>
+  </select>
+
+  <label>Razlog</label>
+  <textarea id="reason" placeholder="Opcionalno"></textarea>
+
+  <button id="saveRequestBtn">
+    Spremi zahtjev
+  </button>
+
+  <p id="message"></p>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/request.js"></script>
+
+</body>
+</html>

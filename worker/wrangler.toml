@@ -1,0 +1,8 @@
+name = "bb-shiftflow-api"
+main = "worker.js"
+compatibility_date = "2026-06-17"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bb_shiftflow"
+database_id = "23750639-0bd6-4e3f-8c11-977206673fbb"
